@@ -1,6 +1,6 @@
 # About
 
-A docker container to run ytdlp because I wanted to run ytdlp on my LibreElec. This is not exactly a minimal image - it was built by looking at the dependencies section of yt-dlp/yt-dlp and installing them from repository on a Debian buster minimal image. This is an oversimplified version of [mikenye/youtube-dl](https://github.com/mikenye/docker-youtube-dl) and works the same way.
+A docker container to run ytdlp because I wanted to run ytdlp on my LibreElec. This is not exactly a minimal image - it was built by looking at the [dependencies section of yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp#dependencies) and installing them from repository on a Debian buster minimal image. This is an oversimplified version of [mikenye/youtube-dl](https://github.com/mikenye/docker-youtube-dl) and works the same way.
 
 There has been absolutely no testing done other than 
 - invoking ytdlp and downloading a file from a URL.
@@ -16,9 +16,9 @@ On LibreElec, use the following to setup an alias and then invoke 'ytdlp' when n
 alias ytdlp='docker run -v "$(pwd)":/workdir:rw aashiks/docker-ytdlp:arm'
 ```
 
-## On an x86_64 machine.
+## On an x86_64 GNU/Linux machine.
 
-On LibreElec, use the following to setup an alias and then invoke 'ytdlp' when needed.
+On X86_64 machines, use the following to setup an alias and then invoke 'ytdlp' when needed.
 
 ```
 alias ytdlp='docker run -v "$(pwd)":/workdir:rw aashiks/docker-ytdlp:x86_64'
