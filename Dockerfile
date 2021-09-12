@@ -1,4 +1,5 @@
 FROM debian:buster-slim
+MAINTAINER aashiks
 RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get install -y ffmpeg ffmpegthumbnailer python3-mutagen \
